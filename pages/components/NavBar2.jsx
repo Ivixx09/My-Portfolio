@@ -1,23 +1,23 @@
 import React from "react";
 
-const NavBar2 = () => {
+const NavBar2 = ({nav}) => {
     return (
-        <div className="bg-black border-t-[1px] border-gray-700">
+        <div className={nav?"mt-8 fixed left-0  w-[100%] sm:w-[50%] bg-black border-gray-700 p-10 z-10 ease-in duration-500":"z-10 fixed top-[-200%] left-0 p-10 ease-in duration-500"}>
             <div className="grid  grid-cols-1 justify-items-center space-y-4">
                 <div className="cursor-pointer w-full grid grid-cols-1 justify-items-center hover:text-gray-400">
-                    <span >A cerca de mí</span>
+                    <span className="text-white">A cerca de mí</span>
                 </div>
                 <div className="cursor-pointer w-full grid justify-items-center hover:text-gray-400">
-                    <span >Pasión</span>
+                    <span className="text-white" >Pasión</span>
                 </div>
                 <div className="cursor-pointer w-full grid justify-items-center hover:text-gray-400">
-                    <span >Experiencia</span>
+                    <span  className="text-white">Experiencia</span>
                 </div>
                 <div className="cursor-pointer w-full grid justify-items-center hover:text-gray-400">
-                    <span >Trabajos</span>
+                    <span  className="text-white">Trabajos</span>
                 </div>
                 <div className="cursor-pointer w-full grid justify-items-center hover:text-gray-400 ">
-                    <span >Contacto</span>
+                    <span className="text-white" >Contacto</span>
                 </div>
             </div>
         </div>
