@@ -1,9 +1,12 @@
 import React from "react";
 import { AiOutlineMenu } from "react-icons/ai";
 import { IconContext } from "react-icons";
-const NavBar = () => {
+const NavBar = ({nav, setNav}) => {
+    const handleNav = () => {
+        setNav(!nav);
+    };
     return (
-        <div className="w-full bg-black h-14 z-40 px-2 py-2">
+        <div className="fixed w-full bg-black h-14 z-40 px-2 py-2">
             <div className="flex h-full justify-between ">
                 <div className="flex h-full space-x-4">
                     <img
@@ -15,8 +18,8 @@ const NavBar = () => {
                         Ivo Maydana
                     </span>
                 </div>
-                <IconContext.Provider value={{color: "white"}} >
-                    <div className="flex items-center h-5/6 w-1/12">
+                <IconContext.Provider value={{ color: "white" }}>
+                    <div onClick={handleNav}  className="flex items-center h-5/6 w-1/12">
                         <AiOutlineMenu className="h-full w-full " />
                     </div>
                 </IconContext.Provider>
