@@ -7,17 +7,17 @@ const NavBar = () => {
             <div className="flex h-full justify-between ">
                 <div className="flex h-full space-x-4">
                     <img
-                        src="./me.jpg"
+                        src="./mee.jpg"
                         alt="myPhoto"
                         className="rounded-full h-auto w-auto"
                     />
-                    <span className="flex items-center text-white">
+                    <span className="flex items-center  text-white">
                         Ivo Maydana
                     </span>
                 </div>
                 <IconContext.Provider value={{color: "white"}} >
                     <div className="flex items-center h-5/6 w-1/12">
-                        <AiOutlineMenu className="h-full w-full" />
+                        <AiOutlineMenu className="h-full w-full " />
                     </div>
                 </IconContext.Provider>
             </div>

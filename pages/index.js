@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <main>
       <NavBar/>
-      {/* <NavBar2/> */}
+      {/* <NavBar2/>  */}
       <Layout/>
     </main>
   )

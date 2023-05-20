@@ -16,7 +16,7 @@ const Layout = () => {
                         HOLA, SOY IVO
                     </span>
                 </div>
-                <div className="text-xl capitalize h-10 text-center items-center font-light from-neutral-700">
+                <div className="text-xl capitalize h-10 text-center items-center  font-light from-neutral-700">
                     <span className="text-white">
                         Desarrollador web y un entusiasta del UX, UI
                     </span>

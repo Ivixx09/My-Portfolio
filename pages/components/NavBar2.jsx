@@ -16,7 +16,7 @@ const NavBar2 = () => {
                 <div className="cursor-pointer w-full grid justify-items-center hover:text-gray-400">
                     <span >Trabajos</span>
                 </div>
-                <div className="cursor-pointer w-full grid justify-items-center hover:text-gray-400">
+                <div className="cursor-pointer w-full grid justify-items-center hover:text-gray-400 ">
                     <span >Contacto</span>
                 </div>
             </div>
