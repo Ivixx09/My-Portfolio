@@ -12,7 +12,7 @@ const Layout = () => {
         >
             <div className="bg-fixed bg-contain flex flex-col justify-center items-center">
                 <div className="h-32 flex justify-center items-center my-7">
-                    <span className="text-6xl px-4 text-center font-light text-white">
+                    <span className="text-6xl px-4 text-center font-light text-white animate__animated animate__bounceInDown">
                         HOLA, SOY IVO
                     </span>
                 </div>
