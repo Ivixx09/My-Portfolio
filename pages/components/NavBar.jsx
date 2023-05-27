@@ -6,7 +6,7 @@ const NavBar = ({nav, setNav}) => {
         setNav(!nav);
     };
     return (
-        <div className="fixed w-full bg-black h-14 z-40 px-2 py-2">
+        <div className={nav?"fixed w-full h-14 z-40 px-2 py-2 bg-black" : "fixed w-full h-14 z-40 px-2 py-2"}>
             <div className="flex h-full justify-between ">
                 <div className="flex h-full space-x-4">
                     <img
