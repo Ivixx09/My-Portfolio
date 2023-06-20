@@ -4,6 +4,7 @@ import NavBar2 from './components/NavBar2'
 import Layout from './components/Layout'
 import { useState } from 'react'
 import About from './components/About'
+import Growing from './components/Growing'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -15,6 +16,7 @@ export default function Home() {
       <NavBar2 nav={nav} setNav={setNav}/> 
       <Layout/>
       <About/>
+      <Growing/>
     </main>
   )
 }
