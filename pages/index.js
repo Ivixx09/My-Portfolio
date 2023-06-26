@@ -6,6 +6,7 @@ import { useState } from 'react'
 import About from './components/About'
 import Growing from './components/Growing'
 import Experience from './components/Experience'
+import CV from './components/CV'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -19,6 +20,7 @@ export default function Home() {
       <About/>
       <Growing/>
       <Experience/>
+      <CV/>
     </main>
   )
 }
