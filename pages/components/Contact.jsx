@@ -2,7 +2,7 @@ import React from 'react'
 import { MdEmail } from "react-icons/md";
 const Contact = () => {
   return (
-    <div className='py-16 bg-[#dee6e9]'>
+    <div className='py-16 bg-[#dee6e9]' id='Contacto'>
         <div className='flex justify-center'>
             <MdEmail size="7em"/>
         </div>

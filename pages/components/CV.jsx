@@ -3,6 +3,7 @@ import React from "react";
 const CV = () => {
     return (
         <div
+        id="CV"
             className="my-8 bg-fixed"
             style={{
                 backgroundImage:

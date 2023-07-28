@@ -26,15 +26,11 @@ const Layout = () => {
                     </div>
                     <IconContext.Provider value={{ color: "white" }}>
                         ;
-                        <Link
-                        to="Presentacion"
-                        smooth={true}
-                        duration={500}
-                    >
-                        <div className="h-11 mt-24 text-center items-center">
-                            <AiOutlineDown className="h-full w-2/3 " />
-                        </div>
-                    </Link>
+                        <Link to="Presentacion" smooth={true} duration={500}>
+                            <div className="h-11 mt-24 text-center items-center animate-bounce">
+                                <AiOutlineDown className="h-full w-2/3 " />
+                            </div>
+                        </Link>
                     </IconContext.Provider>
                     ;
                 </div>
