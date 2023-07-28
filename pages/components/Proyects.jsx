@@ -41,7 +41,7 @@ const Proyects = () => {
     }
 
     return (
-        <div>
+        <div id="Trabajos">
             <div className="text-center">
                 <h1 className="font-2ond text-2xl">
                     Echa un vistazo a mís proyectos ;)
@@ -186,23 +186,3 @@ const Proyects = () => {
 };
 
 export default Proyects;
-// {imgs.map((e, i) => {
-//     return (
-//         <div
-//             key={i}
-//             className="w-auto h-5/6 flex justify-center cursor-pointer"
-//         >
-//             {change ? (
-//                 <div>Diste click</div>
-//             ) : (
-//                 <img
-//                     key={i}
-//                     src={e}
-//                     alt="photo icon"
-//                     className="h-full w-full"
-//                     onPointerEnter={() => handleChange(i)}
-//                 />
-//             )}
-//         </div>
-//     );
-// })}

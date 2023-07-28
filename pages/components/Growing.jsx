@@ -2,7 +2,7 @@ import React from "react";
 
 const Knowledges = () => {
     return (
-        <div className="bg-slate-150 pt-28">
+        <div className="bg-slate-150 pt-28" id="Pasion">
             <h1 className="text-3xl font-bold mb-10 text-center font-2ond">
                 COSAS QUE HE APRENDIDO
             </h1>

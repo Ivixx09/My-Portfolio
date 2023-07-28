@@ -14,7 +14,7 @@ const Experience = () => {
     ];
 
     return (
-        <div className="bg-slate-150 pt-7">
+        <div className="bg-slate-150 pt-7" id="Experiencia">
             <div className="text-3xl font-thin mb-10 text-center font-2ond">
                 <h1>EXPERIENCIA</h1>
             </div>
