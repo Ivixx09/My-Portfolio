@@ -14,20 +14,21 @@ const Experience = () => {
     ];
 
     return (
-        <div className="bg-slate-150 pt-7" id="Experiencia">
+        <div className="bg-slate-150 py-16" id="Experiencia">
             <div className="text-3xl font-thin mb-10 text-center font-2ond">
                 <h1>EXPERIENCIA</h1>
             </div>
-            <div className="py-4 mx-14">
-                <h2 className="text-center font-2ond">
-                    Soy desarrollador hace aproximadamente 2 años, he trabajado
-                    con variadas tecnologías
+            <div className="pt-2 pb-6 mx-14">
+                <h2 className="text-center font-2ond text-lg">
+                    Soy desarrollador hace aproximadamente 2 años.
                 </h2>
+                <br />
+                <h2 className="text-center font-2ond text-lg">he trabajado con variadas tecnologías</h2>
             </div>
-            <div className="text-center py-4 font-2ond">
+            <div className="text-center py-4 font-2ond text-xl">
                 <h3>¡ESTAS SON ALGUNAS DE ELLAS!</h3>
             </div>
-            <div className="grid grid-cols-3 gap-10 content-center justify-items-center">
+            <div className="grid grid-cols-3 gap-12 content-center justify-items-center pt-6">
                 {imgs.map((e, i) => {
                     return (
                         <img
