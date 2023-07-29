@@ -4,20 +4,19 @@ const CV = () => {
     return (
         <div
         id="CV"
-            className="my-8 bg-fixed"
+            className="my-8 bg-fixed bg-no-repeat"
             style={{
-                backgroundImage:
-                    "url('https://images.unsplash.com/photo-1554629947-334ff61d85dc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&h=666&q=80')",
+                backgroundImage: `url('/images/orange.jpg')`, // Reemplaza "nombre_de_tu_imagen.jpg" con el nombre de tu imagen
             }}
         >
             <div className="text-center py-4">
-                <h1 className="font-2ond font-thin font text-2xl text-white">
+                <h1 className="font-2ond font-thin font text-2xl text-black">
                     ¡Si quieres puedes descargar mi hoja de vida!
                 </h1>
             </div>
             <div className="h-36 text-center flex justify-center items-center bg-fixed">
-                <div className="w-[30%] h-[25%] border flex justify-center items-center">
-                    <button className="text-xl font-light text-white">DESCARGAR</button>
+                <div className="w-[30%] h-[25%] border-4  border-black flex justify-center items-center animate-pulse hover:bg-black hover:animate-none ">
+                    <button className="text-xl font- text-black hover:text-white">DESCARGAR</button>
                 </div>
             </div>
         </div>
