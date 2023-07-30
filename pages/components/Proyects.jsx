@@ -41,7 +41,7 @@ const Proyects = () => {
     }
 
     return (
-        <div id="Trabajos">
+        <div className="pt-20" id="Trabajos">
             <div className="text-center">
                 <h1 className="font-2ond text-2xl">
                     Echa un vistazo a mís proyectos ;)
@@ -54,7 +54,7 @@ const Proyects = () => {
                     onMouseEnter={handleChange}
                 >
                     {change1 ? (
-                        <div className="relative ">
+                        <div className="relative">
                             <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20">
                                 <FaMagnifyingGlass
                                     className="z-20"

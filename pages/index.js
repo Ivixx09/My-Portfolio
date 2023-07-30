@@ -9,6 +9,8 @@ import Experience from './components/Experience'
 import CV from './components/CV'
 import Proyects from './components/Proyects'
 import Contact from './components/Contact'
+import 'tailwindcss/tailwind.css';
+
 
 const inter = Inter({ subsets: ['latin'] })
 
