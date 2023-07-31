@@ -9,9 +9,9 @@ const Layout = () => {
             <div
                 style={{
                     backgroundImage:
-                        "url('https://i.pinimg.com/originals/31/30/f1/3130f126b285a41d00af4873b18d4fc5.jpg')",
+                        "url('/images/city.jpg')",
                 }}
-                className="bg-fixed h-4/6 flex flex-col justify-center items-center "
+                className="bg-fixed h-full flex flex-col justify-center items-center "
             >
                 <div className="bg-fixed bg-contain flex flex-col justify-center items-center">
                     <div className="h-32 flex justify-center items-center my-7">
@@ -27,7 +27,7 @@ const Layout = () => {
                     <IconContext.Provider value={{ color: "white" }}>
                         ;
                         <Link to="Presentacion" smooth={true} duration={500}>
-                            <div className="h-11 mt-24 text-center items-center animate-bounce">
+                            <div className="h-20 mt-32 text-center items-center animate-bounce">
                                 <AiOutlineDown className="h-full w-2/3 " />
                             </div>
                         </Link>
