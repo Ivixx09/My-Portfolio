@@ -1,18 +1,17 @@
 import React from "react";
 
-
 const Knowledges = () => {
     return (
-        <div className="bg-slate-150 pt-28" id="Pasion">
-            <h1 className="text-3xl font-bold mb-10 text-center font-2ond">
+        <div className="bg-slate-150 pt-20" id="Pasion">
+            <h1 className="text-3xl font-bold text-center font-2ond">
                 COSAS QUE HE APRENDIDO
             </h1>
             <div className="grid grid-cols-1 gap-10 content-between font-wde text-center mx-10">
-                <div className="pt-8 relative inline-block text-center">
-                    <img src="onda.png" alt="onda" />
-                    <div className="absolute mb-5 mx-4 shadow-2xl rounded-lg top-1/4">
+                <div className="relative inline-block text-center">
+                    <img src="onda.png" alt="onda"/>
+                    <div className="absolute mx-4 shadow-2xl rounded-lg top-[10%]">
                         <div className=" text-black">
-                            <h3 className="text-xl font-2ond">SCRUM</h3>
+                            <h3 className="text-xl font-2ond pb-5">SCRUM</h3>
                         </div>
                         <div className="shadow-2xl rounded-xl text-lg">
                             <p>
@@ -38,9 +37,9 @@ const Knowledges = () => {
                         </div>
                     </div>
                 </div>
-                <div className="pb-8 relative inline-block text-center">
+                <div className="relative inline-block text-center">
                     <img className=" -rotate-90" src="/flecha.png" alt="" />
-                    <div className="absolute  mx-4 shadow-2xl rounded-lg top-[9%]">
+                    <div className="absolute  mx-4 shadow-2xl rounded-lg top-[6%]">
                         <div className="mb-5 text-xl">
                             <h3>DESARROLLO</h3>
                         </div>
@@ -65,9 +64,9 @@ const Knowledges = () => {
                         </div>
                     </div>
                 </div>
-                <div className="pb-8 relative inline-block text-center">
+                <div className="relative inline-block text-center">
                     <img src="onda.png" alt="onda" />
-                    <div className="absolute mx-4 shadow-2xl rounded-lg top-[15%]">
+                    <div className="absolute mx-4 shadow-2xl rounded-lg top-[1%]">
                         <div className="mb-6 text-xl">
                             <h3>CRECER</h3>
                         </div>
@@ -81,8 +80,16 @@ const Knowledges = () => {
                             </p>
                             <br />
                             <p>
-                                Me encantan tener retos diarios y lecturas interesantes, también no solo entrenarme mentalmente
-                                sino que también física y espiritualmente.
+                                Me encantan tener retos diarios y lecturas
+                                interesantes, también no solo entrenarme
+                                mentalmente sino que también física y
+                                espiritualmente.
+                            </p>
+                            <br />
+                            <p>
+                                La programación trajo a mi vida los retos diarios, siendo capaz de 
+                                explotar mi potencial en cada tramo de la misma.
+                                Por ello es que me gusta tanto.
                             </p>
                         </div>
                     </div>

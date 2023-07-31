@@ -4,9 +4,9 @@ const CV = () => {
     return (
         <div
         id="CV"
-            className="my-8 bg-fixed bg-no-repeat"
+            className="my-8 bg-fixed"
             style={{
-                backgroundImage: `url('/images/orange.jpg')`, // Reemplaza "nombre_de_tu_imagen.jpg" con el nombre de tu imagen
+                backgroundImage: `url('/images/orange.jpg')`, 
             }}
         >
             <div className="text-center py-4">
@@ -16,7 +16,7 @@ const CV = () => {
             </div>
             <div className="h-36 text-center flex justify-center items-center bg-fixed">
                 <div className="w-[30%] h-[25%] border-4  border-black flex justify-center items-center animate-pulse hover:bg-black hover:animate-none ">
-                    <button className="text-xl font- text-black hover:text-white">DESCARGAR</button>
+                    <button className="text-xl text-black hover:text-white w-full">DESCARGAR</button>
                 </div>
             </div>
         </div>
