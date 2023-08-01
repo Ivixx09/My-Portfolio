@@ -43,7 +43,7 @@ const Proyects = () => {
     return (
         <div className="pt-20" id="Trabajos">
             <div className="text-center">
-                <h1 className="font-2ond text-2xl">
+                <h1 className="font-wde font-bold text-4xl pb-14">
                     Echa un vistazo a mís proyectos ;)
                 </h1>
             </div>
