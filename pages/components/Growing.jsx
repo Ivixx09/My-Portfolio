@@ -116,35 +116,3 @@ const Knowledges = () => {
 };
 
 export default Knowledges;
-{
-    /* <div className="relative inline-block text-center">
-<img src="onda.png" alt="onda"/>
-<div className="absolute mx-4 shadow-2xl rounded-lg top-[10%]">
-    <div className=" text-black">
-        <h3 className="text-xl font-2ond pb-5">SCRUM</h3>
-    </div>
-    <div className="shadow-2xl rounded-xl text-lg">
-        <p>
-            El desarrollo de páginas web no es nada
-            sencillo, menos si tenemos pensado hacer algo
-            grande
-        </p>
-        <br />
-        <p>
-            Por ello me he interesado desde un principio en
-            la manera de aplicar alguna metodología ágil
-            como el SCRUM
-        </p>
-        <br />
-        <p>
-            Me he capacitado desde el bootcamp SOY HENRY
-            trabajando de manera eficiente y eficaz con este
-            método, logrando quedar con mi grupo entre los
-            tres primeros en el proyecto final, y creo que
-            esta forma de organización fue una de las
-            grandes aliadas en ese hito
-        </p>
-    </div>
-</div>
-</div> */
-}
