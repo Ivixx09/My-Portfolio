@@ -70,7 +70,7 @@ const Knowledges = () => {
                                 de los problemas sino que me inspiró a 
                                 aplicar en mi vida el gran refrán 
                                 <br />
-                                <em>"Divide and conquer"</em>
+                                <em>&quot;Divide and conquer&quot;</em>
                             </p>
                         </div>
                     </div>
