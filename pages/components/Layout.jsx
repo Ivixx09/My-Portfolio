@@ -28,7 +28,7 @@ const Layout = () => {
                         ;
                         <Link to="Presentacion" smooth={true} duration={500}>
                             <div className="h-20 mt-32 text-center items-center animate-bounce">
-                                <AiOutlineDown className="h-full w-2/3 " />
+                                <AiOutlineDown className="h-full w-2/3"/>
                             </div>
                         </Link>
                     </IconContext.Provider>

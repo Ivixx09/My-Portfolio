@@ -10,7 +10,7 @@ const NavBar2 = ({ nav, setNav }) => {
         <div
             className={
                 nav
-                    ? "mt-12 fixed w-[100%] bg-black p-10 z-10 ease-in duration-500"
+                    ? "mt-12 fixed w-[100%] bg-black p-10 z-50 ease-in duration-500"
                     : "z-10 fixed w-[100%] ease-in duration-500"
             }
         >

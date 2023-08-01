@@ -15,7 +15,7 @@ const Experience = () => {
 
     return (
         <div className="bg-slate-150 py-16" id="Experiencia">
-            <div className="text-3xl font-thin mb-10 text-center font-2ond">
+            <div className="text-3xl font-bold mb-10 text-center font-wde">
                 <h1>EXPERIENCIA</h1>
             </div>
             <div className="pt-2 pb-6 mx-14">
