@@ -3,10 +3,10 @@ import React from "react";
 const Knowledges = () => {
     return (
         <div className="bg-slate-150 pt-20" id="Pasion">
-            <h1 className="text-3xl font-bold text-center font-wde">
+            <h1 className="text-2xl lg:text-4xl 2xl:text-6xl text-center font-wde">
                 COSAS QUE HE APRENDIDO
             </h1>
-            <div className="grid grid-cols-1 gap-12 content-between font-wde text-center mx-10 pt-20">
+            <div className="grid grid-cols-1 gap-12 content-between font-wde text-center mx-10 pt-20 md:mx-[20%] lg:mx-[25%]">
                 <div
                     className="bg-local bg-cover bg-no-repeat bg-center"
                     style={{
@@ -14,9 +14,9 @@ const Knowledges = () => {
                     }}
                 >
                     <div className=" text-black">
-                        <h3 className="text-xl font-2ond pb-5">SCRUM</h3>
+                        <h3 className="text-xl font-2ond pb-5 lg:text-2xl">SCRUM</h3>
                     </div>
-                    <div className="shadow-2xl rounded-xl text-lg">
+                    <div className="font-2ond shadow-2xl rounded-xl text-lg lg:text-xl 2xl:text-2xl">
                         <p>
                             El desarrollo de páginas web no es nada sencillo,
                             menos si tenemos pensado hacer algo grande
@@ -45,10 +45,10 @@ const Knowledges = () => {
                             backgroundImage: `url('/images/flecha.png')`,
                         }}
                     >
-                        <div className="mb-5 text-xl">
+                        <div className="mb-5 text-xl lg:text-2xl">
                             <h3>DESARROLLO</h3>
                         </div>
-                        <div className="shadow-2xl rounded-xl text-lg">
+                        <div className="font-2ond shadow-2xl rounded-xl text-lg lg:text-xl 2xl:text-2xl">
                             <p>
                                 El desarrollo como programador fue un proceso
                                 duro y complicado, pero con constancia logré
@@ -82,10 +82,10 @@ const Knowledges = () => {
                             backgroundImage: `url('/images/onda2.jpg')`,
                         }}
                     >
-                        <div className="mb-6 text-xl">
+                        <div className="mb-6 text-xl lg:text-2xl">
                             <h3>CRECER</h3>
                         </div>
-                        <div className="shadow-2xl rounded-xl text-lg">
+                        <div className="font-2ond shadow-2xl rounded-xl text-lg lg:text-xl 2xl:text-2xl">
                             <p>
                                 No me conformo con lo que ya sé, siempre busco
                                 crecer y mejorar mis habilidades. Mantengo una
