@@ -41,7 +41,7 @@ const Proyects = () => {
     }
 
     return (
-        <div className="pt-20" id="Trabajos">
+        <div className="py-20" id="Trabajos">
             <div className="text-center">
                 <h1 className="font-wde font-bold text-2xl lg:text-4xl 2xl:text-6xl text-center pb-14">
                     Echa un vistazo a mís proyectos ;)
