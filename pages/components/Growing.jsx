@@ -14,7 +14,7 @@ const Knowledges = () => {
                     }}
                 >
                     <div className=" text-black">
-                        <h3 className="text-xl font-2ond pb-5 lg:text-2xl">SCRUM</h3>
+                        <h3 className="font-2ond pb-5 text-xl lg:text-2xl">SCRUM</h3>
                     </div>
                     <div className="font-2ond shadow-2xl rounded-xl text-lg lg:text-xl 2xl:text-2xl">
                         <p>
