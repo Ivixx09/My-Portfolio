@@ -43,7 +43,7 @@ const Proyects = () => {
     return (
         <div className="pt-20" id="Trabajos">
             <div className="text-center">
-                <h1 className="font-wde font-bold text-4xl pb-14">
+                <h1 className="font-wde font-bold text-2xl lg:text-4xl 2xl:text-6xl text-center pb-14">
                     Echa un vistazo a mís proyectos ;)
                 </h1>
             </div>
@@ -54,7 +54,7 @@ const Proyects = () => {
                     onMouseEnter={handleChange}
                 >
                     {change1 ? (
-                        <div className="relative">
+                        <div className="animation-wiggle relative h-[110%]">
                             <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20">
                                 <FaMagnifyingGlass
                                     className="z-20"
@@ -65,11 +65,11 @@ const Proyects = () => {
                             <div className="h-full w-full">
                                 <img
                                     src="./CountryAppModified2.jpg"
-                                    className="w-full h-auto z-10"
+                                    className="w-full h-full z-10"
                                     alt=""
                                 />
                             </div>
-                            <div className=" bottom-0 left-0 w-full py-2 bg-blue-500 text-white text-center">
+                            <div className="absolute  w-full  bg-blue-500 text-white text-center">
                                 Ver más
                             </div>
                         </div>
@@ -87,7 +87,7 @@ const Proyects = () => {
                     onMouseEnter={handleChange}
                 >
                     {change2 ? (
-                        <div className="relative ">
+                        <div className="relative h-[110%]">
                             <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20">
                                 <FaMagnifyingGlass
                                     className="z-20"
@@ -98,11 +98,11 @@ const Proyects = () => {
                             <div className="h-full w-full">
                                 <img
                                     src="./NFTrade.png"
-                                    className="w-full h-auto z-10"
+                                    className="w-full h-full z-10"
                                     alt=""
                                 />
                             </div>
-                            <div className=" bottom-0 left-0 w-full py-2 bg-blue-500 text-white text-center">
+                            <div className="absolute w-full bg-blue-500 text-white text-center">
                                 Ver más
                             </div>
                         </div>
@@ -120,7 +120,7 @@ const Proyects = () => {
                     onMouseEnter={handleChange}
                 >
                     {change3 ? (
-                        <div className="relative ">
+                        <div className="relative h-[110%]">
                             <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20">
                                 <FaMagnifyingGlass
                                     className="z-20"
@@ -131,11 +131,11 @@ const Proyects = () => {
                             <div className="h-full w-full">
                                 <img
                                     src="./VideogamesModified.jpg"
-                                    className="w-full h-auto z-10"
+                                    className="w-full h-full z-10"
                                     alt=""
                                 />
                             </div>
-                            <div className=" bottom-0 left-0 w-full py-2 bg-blue-500 text-white text-center">
+                            <div className="absolute w-full bg-blue-500 text-white text-center">
                                 Ver más
                             </div>
                         </div>
@@ -153,7 +153,7 @@ const Proyects = () => {
                     onMouseEnter={handleChange}
                 >
                     {change4 ? (
-                        <div className="relative ">
+                        <div className="relative h-[110%]">
                             <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20">
                                 <FaMagnifyingGlass
                                     className="z-20"
@@ -164,11 +164,11 @@ const Proyects = () => {
                             <div className="h-full w-full">
                                 <img
                                     src="./OpinionFormosenia.png"
-                                    className="w-full h-auto z-10"
+                                    className="w-full h-full z-10"
                                     alt=""
                                 />
                             </div>
-                            <div className=" bottom-0 left-0 w-full py-2 bg-blue-500 text-white text-center">
+                            <div className="absolute w-full bg-blue-500 text-white text-center">
                                 Ver más
                             </div>
                         </div>
