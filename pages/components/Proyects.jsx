@@ -65,13 +65,15 @@ const Proyects = () => {
                 <FaMagnifyingGlass className="z-20" color="white" size="2em" />
               </>
             </div>
-            <div className="h-full w-full">
-              <img
-                src="./CountryAppModified2.jpg"
-                className="w-full h-full z-10"
-                alt=""
-              />
-            </div>
+            <a href="https://github.com/Ivixx09/CountryApp" target="_blank">
+              <div className="h-full w-full">
+                <img
+                  src="./CountryAppModified2.jpg"
+                  className="w-full h-full z-10"
+                  alt=""
+                />
+              </div>
+            </a>
             <div
               className={
                 change1
@@ -100,9 +102,18 @@ const Proyects = () => {
                 <FaMagnifyingGlass className="z-20" color="white" size="2em" />
               </>
             </div>
-            <div className="h-full w-full">
-              <img src="./NFTrade.png" className="w-full h-full z-10" alt="" />
-            </div>
+            <a
+              href="https://github.com/NicoCastagnet/PF-NFTRADE"
+              target="_blank"
+            >
+              <div className="h-full w-full">
+                <img
+                  src="./NFTrade.png"
+                  className="w-full h-full z-10"
+                  alt=""
+                />
+              </div>
+            </a>
             <div
               className={
                 change2
@@ -119,7 +130,7 @@ const Proyects = () => {
           value="Photo3"
           onMouseEnter={handleChange}
         >
-          <div className="relative trensition-all duration-500 hover:scale-110">
+          <div className="relative transition-all duration-500 hover:scale-110">
             <div
               className={
                 change3
@@ -131,13 +142,15 @@ const Proyects = () => {
                 <FaMagnifyingGlass className="z-20" color="black" size="2em" />
               </>
             </div>
-            <div className="h-full w-full">
-              <img
-                src="./VideogamesModified.jpg"
-                className="w-full h-full z-10"
-                alt=""
-              />
-            </div>
+            <a href="https://github.com/Ivixx09/PI-VIdeoGames" target="_blank">
+              <div className="h-full w-full">
+                <img
+                  src="./VideogamesModified.jpg"
+                  className="w-full h-full z-10"
+                  alt=""
+                />
+              </div>
+            </a>
             <div
               className={
                 change3
@@ -153,6 +166,7 @@ const Proyects = () => {
           className="w-auto h-4/6 flex justify-center cursor-pointer"
           value="Photo4"
           onMouseEnter={handleChange}
+          onMouseLeave={handleChange}
         >
           <div className="relative trensition-all duration-500 hover:scale-110">
             <div
@@ -166,13 +180,18 @@ const Proyects = () => {
                 <FaMagnifyingGlass className="z-20" color="gray" size="2em" />
               </>
             </div>
-            <div className="h-full w-full">
-              <img
-                src="./OpinionFormosenia.png"
-                className="w-full h-full z-10"
-                alt=""
-              />
-            </div>
+            <a
+              href="https://github.com/AhrensOG/NewspaperProject-Client"
+              target="_blank"
+            >
+              <div className="h-full w-full">
+                <img
+                  src="./OpinionFormosenia.png"
+                  className="w-full h-full z-10"
+                  alt=""
+                />
+              </div>
+            </a>
             <div
               className={
                 change4
