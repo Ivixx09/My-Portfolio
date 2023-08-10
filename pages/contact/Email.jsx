@@ -1,6 +1,6 @@
 import React from 'react'
 import { Formik, Form, Field, useFormik } from 'formik'
-import { mailSchema } from '../Validations/Validations'
+import mailSchema from '../Validations/Validations'
 
 export default function Page() {
   return (
