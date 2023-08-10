@@ -1,6 +1,6 @@
 import React from 'react'
 import { Formik, Form, Field, useFormik } from 'formik'
-import { mailSchema } from '../Validations/Validations'
+import mailSchema from '../../api/Validations/Validations.js'
 
 export default function Page() {
   return (
@@ -21,12 +21,7 @@ export default function Page() {
       >
         <Form>
           <label htmlFor="name">First Name</label>
-          <Field
-            id="name"
-            name="name"
-            placeholder="Jane"
-            errors={formik.errors.name}
-          />
+          <Field id="name" name="name" placeholder="Jane" />
 
           <label htmlFor="lastName">Last Name</label>
           <Field id="lastName" name="lastName" placeholder="Doe" />
