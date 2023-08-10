@@ -1,5 +1,5 @@
 import React from 'react'
-import { MdEmail } from 'react-icons/md'
+import  MdEmail  from 'react-icons/md'
 const Contact = () => {
   return (
     <div className="py-32 bg-[#dee6e9]" id="Contacto">
