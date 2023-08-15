@@ -25,7 +25,7 @@ const Contact = () => {
           O contactarte a mi número de teléfono +54 370 4013565
         </span>
         <p className="text-lg lg:text-xl 2xl:text-2xl text-center my-5 font-wde">
-          Aunque si lo prefieres tambièn tienes mis redes profesionales para que
+          Aunque si lo prefieres también tienes mis redes profesionales para que
           podamos chatear ;)
         </p>
       </div>
