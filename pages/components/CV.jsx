@@ -15,7 +15,7 @@ const CV = () => {
         </h1>
       </div>
       <a
-        href="https://drive.google.com/file/d/1mV6YSELk7r0evE3zJRVCJ4wom00mFF2k/view?usp=sharing"
+        href="https://drive.google.com/file/d/1r8rMYGLk4exY1AGT9aASIC-7mPUwpW4c/view?usp=sharing"
         target="_blank"
       >
         <div className="h-36 text-center flex justify-center items-center bg-fixed text-lg lg:text-xl 2xl:text-2xl">
