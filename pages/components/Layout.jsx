@@ -24,7 +24,6 @@ const Layout = () => {
             </span>
           </div>
           <IconContext.Provider value={{ color: 'white' }}>
-            ;
             <Link to="Presentacion" smooth={true} duration={500}>
               <div className="h-20 mt-32 text-center items-center animate-bounce">
                 <AiOutlineDown className="h-full w-2/3" />

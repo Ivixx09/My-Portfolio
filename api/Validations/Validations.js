@@ -1,10 +1,10 @@
-import { object, string } from 'yup'
+import * as Yup from 'yup'
 
-const mailSchema = object({
-  name: string().required('Por favor ingresa tu nombre'),
-  lastName: string().required('Por favor completa con tu apellido'),
-  email: string().email('Por favor ingresa tu mail').required('Requerido'),
-  subject: string().required('Requerido'),
-  text: string().required('requerido'),
+const mailSchema = Yup.object().shape({
+  name: Yup.string().required('Por favor ingresa tu nombre'),
+  lastName: Yup.string().required('Por favor ingresa tu apellido'),
+  email: Yup.string().email().required('Por favor ingresa tu mail'),
+  subject: Yup.string().required('Requerido'),
+  text: Yup.string().required('Requerido'),
 })
 export default mailSchema
