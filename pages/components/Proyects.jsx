@@ -3,7 +3,6 @@ import Card from '../Card/Card'
 import { useState } from 'react'
 
 const Proyects = () => {
-  const [value, setValue] = useState(0)
   const proyects = [
     {
       title: 'CountryApp',
@@ -55,7 +54,14 @@ const Proyects = () => {
         </h1>
       </div>
       {proyects.map((e) => {
-        return <Card link={e.various.link} img={e.img} value={e.value} />
+        return (
+          <Card
+            link={e.various.link}
+            img={e.img}
+            value={e.value}
+            key={e.value}
+          />
+        )
       })}
     </div>
   )
