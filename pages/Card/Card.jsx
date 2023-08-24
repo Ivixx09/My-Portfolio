@@ -1,37 +1,50 @@
 import React from 'react'
-import { FaMagnifyingGlass } from 'react-icons/fa6'
-import { useState } from 'react'
+import { FaGithub, FaLink } from 'react-icons/fa'
 
-const Card = ({ value, link, img }) => {
+const Card = ({ value, link, img, demo, description, title, technologies }) => {
   return (
-    <section className="grid lg:grid-cols-1 content-center items-center justify-items-center">
-      <div
-        className="w-auto h-4/6 flex justify-center cursor-pointer"
-        value={value}
-      >
-        <div className="relative trensition-all duration-500 hover:scale-110">
-          <a
-            href={link}
-            target="_blank"
-            className="opacity-0 hover:opacity-100 absolute grid content-center justify-items-center z-20 transition-all h-full w-full duration-500 ease-in-out"
-          >
-            <div>
-              <FaMagnifyingGlass className="z-20" color="pink" size="2em" />
-            </div>
-          </a>
-          <div className="h-full w-full">
-            <img src={img} className="w-full h-full z-10" alt="" />
+    <section className="flex flex-col md:flex-row w-[90%] bg-black justify-between items-center rounded-lg space-y-12 border-4 border-blue-700 lg:w-[70%] xl:w-[65%] 2xl:w-[50%]">
+      <div className="w-full flex flex-col space-y-8 pt-4 px-4">
+        <div className="flex justify-between">
+          <h1 className="text-white text-2xl"> {title} </h1>
+          <div className="flex space-x-2">
+            <a href={link} target="_blank">
+              <FaGithub color="white" size="2em" />
+            </a>
+            <a
+              href={demo}
+              target="_blank"
+              className={demo === 'No existe' ? 'hidden' : 'flex'}
+            >
+              <FaLink color="white" size="2em" />
+            </a>
           </div>
         </div>
+        <div className="text-white text-lg flex flex-col space-y-4 justify-center w-full">
+          <div>
+            <p>{description}</p>
+          </div>
+          <div>
+            <ul className="flex space-x-4 ">
+              {technologies.map((e) => {
+                return (
+                  <li
+                    key={e}
+                    className="border-2 w-[70%] flex justify-center text-sm border-blue-700"
+                  >
+                    {e}
+                  </li>
+                )
+              })}
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div className="w-[80%] pb-4 2xl:w-[50%] md:mr-4">
+        <img src={img} alt={value} />
       </div>
     </section>
   )
 }
 
 export default Card
-
-{
-  /* <div className="opacity-0 hover:opacity-100 absolute w-full  bg-blue-500 text-white text-center transition-all duration-500 ease-in-out">
-    Ver más
-  </div> */
-}

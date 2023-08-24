@@ -16,7 +16,7 @@ const Experience = () => {
   return (
     <div className="bg-slate-150 py-16" id="Experiencia">
       <div className="text-2xl lg:text-4xl 2xl:text-6xl mb-10 text-center font-wde">
-        <h1>EXPERIENCIA</h1>
+        <h1>SKILLS</h1>
       </div>
       <div className="pt-2 pb-6 mx-14">
         <h2 className="text-center font-2ond text-lg lg:text-xl 2xl:text-2xl">
