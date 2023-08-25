@@ -26,7 +26,7 @@ const Card = ({ value, link, img, demo, description, title, technologies }) => {
           </div>
           <div>
             <ul className="flex space-x-4 ">
-              {technologies.map((e) => {
+              {technologies?.map((e) => {
                 return (
                   <li
                     key={e}
