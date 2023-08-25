@@ -1,21 +1,33 @@
-import React from 'react'
+import React, { useRef } from 'react'
+import * as Yup from 'yup'
 import { Formik, Field } from 'formik'
 import { GrGithub, GrLinkedin } from 'react-icons/gr'
 import { AiOutlineMail, AiOutlinePhone } from 'react-icons/ai'
 
-import mailSchema from '../../api/Validations/Validations.js'
-
 export default function Page() {
+  const form = useRef()
+
   const initialValues = {
-    name: '',
-    lastName: '',
-    email: '',
+    user_name: '',
+    user_email: '',
     subject: '',
-    text: '',
+    message: '',
   }
 
-  const onSubmit = (values) => {
-    console.log('values', values)
+  const mailSchema = Yup.object().shape({
+    user_name: Yup.string().required('Por favor ingresa tu nombre'),
+    user_email: Yup.string().email().required('Por favor ingresa tu mail'),
+    subject: Yup.string().required('Requerido'),
+    message: Yup.string().required('Requerido'),
+  })
+
+  const onSubmit = async (values, { resetForm }) => {
+    alert(
+      JSON.stringify(
+        'Tu email fue enviado correctamente, gracias por contactarte :D',
+      ),
+    )
+    await resetForm()
   }
   return (
     <section
@@ -60,25 +72,38 @@ export default function Page() {
         </div>
         <Formik
           initialValues={initialValues}
-          onSubmit={onSubmit}
           validationSchema={mailSchema}
+          onSubmit={onSubmit}
         >
           {({ errors, touched, handleSubmit }) => (
             <form
-              onSubmit={handleSubmit}
+              onSubmit={() =>
+                setTimeout(() => {
+                  document.getElementById('form').reset()
+                }, 3000)
+              }
+              ref={form}
               className="grid grid-cols-1 gap-14 justify-items-center content-center py-10"
+              id="form"
+              action="https://getform.io/f/e723004a-9501-447c-ba73-b2c3e745830d"
+              method="POST"
+              encType="multipart/form-data"
+              target="_blank"
+              rel="noreferrer"
             >
               <div>
                 <div>
                   <div className="flex flex-col">
                     <Field
-                      name="name"
-                      id="name"
+                      name="user_name"
+                      id="user_name"
                       placeholder="Nombre"
                       className="border-gray-400 border-[2px] rounded-md h-9 w-52 md:w-80 "
                     />
                     <div className="text-white">
-                      {errors.name && touched.name && errors.name}
+                      {errors.user_name &&
+                        touched.user_name &&
+                        errors.user_name}
                     </div>
                   </div>
                 </div>
@@ -86,26 +111,15 @@ export default function Page() {
               <div>
                 <div className="flex flex-col">
                   <Field
-                    name="lastName"
-                    id="lastName"
-                    placeholder="Apellido"
-                    className="border-gray-400 border-[2px] rounded-md h-9 w-52 md:w-80"
-                  />
-                  <div className="text-white">
-                    {errors.lastName && touched.lastName && errors.lastName}
-                  </div>
-                </div>
-              </div>{' '}
-              <div>
-                <div className="flex flex-col">
-                  <Field
-                    name="email"
-                    id="email"
+                    name="user_email"
+                    id="user_email"
                     placeholder="Email"
                     className="border-gray-400 border-[2px] rounded-md h-9 w-52 md:w-80"
                   />
                   <div className="text-white">
-                    {errors.email && touched.email && errors.email}
+                    {errors.user_email &&
+                      touched.user_email &&
+                      errors.user_email}
                   </div>
                 </div>
               </div>
@@ -125,13 +139,13 @@ export default function Page() {
               <div className="flex flex-col">
                 <div>
                   <Field
-                    name="text"
-                    id="text"
+                    name="message"
+                    id="message"
                     placeholder="Texto"
                     className="border-gray-400 border-[2px] rounded-md h-36 w-80"
                   />
                   <div className="text-white">
-                    {errors.text && touched.text && errors.text}
+                    {errors.message && touched.message && errors.message}
                   </div>
                 </div>
               </div>
