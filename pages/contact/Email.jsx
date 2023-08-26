@@ -16,7 +16,9 @@ export default function Page() {
 
   const mailSchema = Yup.object().shape({
     user_name: Yup.string().required('Por favor ingresa tu nombre'),
-    user_email: Yup.string().email().required('Por favor ingresa tu mail'),
+    user_email: Yup.string()
+      .email('Ingresa un email válido')
+      .required('Por favor ingresa tu mail'),
     subject: Yup.string().required('Requerido'),
     message: Yup.string().required('Requerido'),
   })
@@ -39,7 +41,7 @@ export default function Page() {
       <h1 className="font-wde text-cyan-50 text-center text-3xl">
         FORMULARIO DE CONTACTO
       </h1>
-      <div className="md:grid grid-cols-2 lg:mx-48 xl:mx-[20%] 2xl:mx-[25%]  bg-gradient-to-b from-indigo-500 via-purple-500 to-pink-500 mx-12 rounded-md space-y-2">
+      <div className="md:grid grid-cols-2 lg:mx-48 xl:mx-[20%] 2xl:mx-[25%]  bg-gradient-to-b from-indigo-500 via-purple-500 to-pink-500 mx-5 sm:mx-12 rounded-md space-y-2">
         <div className="grid grid-cols-1 gap-4 justify-items-center content-center text-white pt-7">
           <div className="flex space-x-3">
             <AiOutlineMail size="2em" />
@@ -139,6 +141,7 @@ export default function Page() {
               <div className="flex flex-col">
                 <div>
                   <Field
+                    as="textarea"
                     name="message"
                     id="message"
                     placeholder="Texto"
@@ -150,20 +153,20 @@ export default function Page() {
                 </div>
               </div>
               <div className="text-white">
-                <button
-                  type="submit"
-                  className={
-                    errors.name ||
-                    errors.email ||
-                    errors.lastName ||
-                    errors.subject ||
-                    errors.text
-                      ? 'border-2 w-32 bg-pink-800 border-indigo-500'
-                      : 'border-2 w-32 bg-pink-800 border-indigo-500 animate-pulse'
-                  }
-                >
-                  ENVIAR
-                </button>
+                {errors.name ||
+                errors.email ||
+                errors.lastName ||
+                errors.subject ||
+                errors.text ? (
+                  <div></div>
+                ) : (
+                  <button
+                    type="submit"
+                    className="border-2 w-32 bg-pink-800 border-indigo-500 animate-pulse"
+                  >
+                    ENVIAR
+                  </button>
+                )}
               </div>
             </form>
           )}
